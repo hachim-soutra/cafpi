@@ -1,0 +1,52 @@
+$base-color: #253873;
+$primary: #d26135;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+  color:  $primary !important;
+}
+div#app {
+  height: 100%;
+}
+.Container {
+  background-image: url("./assets/large-background.svg");
+  background-size: 147%;
+  background-repeat: no-repeat;
+  background-color: $base-color;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+a,
+label,
+p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 105%;
+  line-height: 125%;
+}
+.small-links {
+  float: right;
+  width: 25%;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+  line-height: 1;
+  a {
+    width: 100%;
+    float: left;
+    font-size: 0.8em;
+  }
+}
+
