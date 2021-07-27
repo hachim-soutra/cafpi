@@ -5,6 +5,8 @@ import config from '../config'
 // start page 
 import Home from "@/page/Home.vue"
 import CreditImmobilier from "@/page/CreditImmobilier.vue"
+import CreditConsommation from "@/page/CreditConsommation.vue"
+
 
 // end page 
 
@@ -21,6 +23,11 @@ const routes = [
         path: '/credit-immobilier',     
         name: 'creditImmobilier',
         component: CreditImmobilier 
+    },
+    { 
+        path: '/credit-consommation',     
+        name: 'creditConsommation',
+        component: CreditConsommation 
     },
 ]
 

@@ -1,89 +1,34 @@
 <template>
-  <div class="Cafpi">
-    <div class="Cafpi__container">
-      <div class="cafpi-nav-ariane">
-        <a href="https://www.cafpimaroc.com"><i class="fa fa-home"> </i> </a>
-        &gt; Crédit Immobilier
-      </div>
-      <h1>
-        Bénéficiez des meilleures conditions de financement pour votre projet
-        immobilier
-      </h1>
-
-      <div class="row" >
-        <template v-for=" item in items" >
-        <CafpiCard :item="item"  :key="item.id"/>
-        </template>
-      </div>
-
-      <h1>
-        Autres financements
-      </h1>
-
-      <div class="row" >
-        <template v-for="financement in financements" >
-        <CafpiCard :item="financement"  :key="financement.id"/>
-        </template>
-      </div>
-    </div>
+  <div class="col-md-6 btnMenu btnImmo">
+          <h1>{{ item.name }}</h1>
+          
+          <p >
+           {{ item.description }}
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <a :href="item.lien1" class="btn-menu-cta"
+                >Ma Simulation en 1 min!</a
+              >
+            </div>
+            <div class="col-md-6">
+              <a :href="item.lien2" class="btn-menu-cta"
+                >Je demande un prêt</a
+              >
+            </div>
+          </div>
   </div>
 </template>
 
 <script>
-
-import CafpiCard from "@/components/CafpiCard.vue"
 export default {
-  components: {
-   
-    CafpiCard
+  props: {
+    item: Object
   },
-  data(){
-    return {
-      
-      items:[
-        {
-          id: 1,
-          name: 'Ma Mensualité',
-          description: 'Quelle sera ma mensualité selon le montant souhaité et la durée du prêt ?',
-          lien1:'', lien2:''
-        },
-        {
-          id: 2,
-          name: 'Capacite d\'Endettement',
-          description: 'Quel est le montant maximum que je peux emprunter et ma mensualité ?',
-          lien1:'', lien2:''
-        },
-        {
-          id: 3,
-          name: 'Financement Mourabaha',
-          description: 'Quelle sera ma redevance mensuelle selon le montant souhaité et la durée du financement?',
-           lien1:'', lien2:''
-        }
-
-      ],
-
-
-         financements :[
-        {
-          id: 1,
-          name: 'Rachat de Crédit',
-          description: 'Quelle serait mon économie générée en cas de rachat ?',
-          lien1:'', lien2:''
-        },
-        {
-          id: 2,
-          name: 'Crédit Consommation',
-          description: 'J\'évalue très rapidement le montant des mensualités que j\'aurai à rembourser.',
-          lien1:'', lien2:''
-        }
-
-      ]
-
-    }
-  }
 };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .Cafpi {
   color: #fff;

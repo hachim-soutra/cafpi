@@ -48,6 +48,9 @@
           <li class="nav-item">
             <router-link class="nav-link" tag="a" :to="{name:'creditImmobilier'}">Crédit Immobilier</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" tag="a" :to="{name:'creditConsommation'}">Crédit Consommation</router-link>
+          </li>
         </ul>
       </div>
     </div>
