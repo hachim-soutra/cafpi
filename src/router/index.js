@@ -4,6 +4,7 @@ import config from '../config'
 
 // start page 
 import Home from "@/page/Home.vue"
+import CreditImmobilier from "@/page/CreditImmobilier.vue"
 
 // end page 
 
@@ -13,8 +14,13 @@ Vue.use(VueRouter)
 const routes = [
     { 
         path: '/',     
-        name: 'Home',
+        name: 'home',
         component: Home 
+    },
+    { 
+        path: '/credit-immobilier',     
+        name: 'creditImmobilier',
+        component: CreditImmobilier 
     },
 ]
 
