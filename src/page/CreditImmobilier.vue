@@ -10,9 +10,9 @@
         immobilier
       </h1>
 
-      <div class="row" >
-        <template v-for=" item in items" >
-        <CafpiCard :item="item"  :key="item.id"/>
+      <div class="row">
+        <template v-for="item in items">
+          <CafpiCard :item="item" :key="item.id" />
         </template>
       </div>
 
@@ -20,9 +20,9 @@
         Autres financements
       </h1>
 
-      <div class="row" >
-        <template v-for="financement in financements" >
-        <CafpiCard :item="financement"  :key="financement.id"/>
+      <div class="row">
+        <template v-for="financement in financements">
+          <CafpiCard :item="financement" :key="financement.id" />
         </template>
       </div>
     </div>
@@ -30,57 +30,59 @@
 </template>
 
 <script>
-
-import CafpiCard from "@/components/CafpiCard.vue"
+import CafpiCard from "@/components/CafpiCard.vue";
 export default {
   components: {
-   
-    CafpiCard
+    CafpiCard,
   },
-  data(){
+  data() {
     return {
-      
-      items:[
+      items: [
         {
           id: 1,
-          name: 'Ma Mensualité',
-          description: 'Quelle sera ma mensualité selon le montant souhaité et la durée du prêt ?',
-          lien1:'', lien2:''
+          name: "Ma Mensualité",
+          description:
+            "Quelle sera ma mensualité selon le montant souhaité et la durée du prêt ?",
+          lien1: "",
+          lien2: "",
         },
         {
           id: 2,
-          name: 'Capacite d\'Endettement',
-          description: 'Quel est le montant maximum que je peux emprunter et ma mensualité ?',
-          lien1:'', lien2:''
+          name: "Capacite d'Endettement",
+          description:
+            "Quel est le montant maximum que je peux emprunter et ma mensualité ?",
+          lien1: "",
+          lien2: "",
         },
         {
           id: 3,
-          name: 'Financement Mourabaha',
-          description: 'Quelle sera ma redevance mensuelle selon le montant souhaité et la durée du financement?',
-           lien1:'', lien2:''
-        }
-
+          name: "Financement Mourabaha",
+          description:
+            "Quelle sera ma redevance mensuelle selon le montant souhaité et la durée du financement?",
+          lien1: "",
+          lien2: "",
+        },
       ],
 
-
-         financements :[
+      financements: [
         {
           id: 1,
-          name: 'Rachat de Crédit',
-          description: 'Quelle serait mon économie générée en cas de rachat ?',
-          lien1:'', lien2:''
+          name: "Rachat de Crédit",
+          description: "Quelle serait mon économie générée en cas de rachat ?",
+          lien1: "",
+          lien2: "",
         },
         {
           id: 2,
-          name: 'Crédit Consommation',
-          description: 'J\'évalue très rapidement le montant des mensualités que j\'aurai à rembourser.',
-          lien1:'', lien2:''
-        }
-
-      ]
-
-    }
-  }
+          name: "Crédit Consommation",
+          description:
+            "J'évalue très rapidement le montant des mensualités que j'aurai à rembourser.",
+          lien1: "",
+          lien2: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 

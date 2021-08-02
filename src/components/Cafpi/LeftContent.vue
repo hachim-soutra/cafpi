@@ -1,9 +1,10 @@
 <template>
-  <div class="Cafpi__leftContent col-md-7">
+  <div class="Cafpi__leftContent col-md-6">
+    
           <h2 class="Cafpi__title">
             {{ title }}
           </h2>
-          <span class="Cafpi__subtitle"
+          <span class="Cafpi__subtitle" 
             >{{ subtitle }}</span
           >
           <a
